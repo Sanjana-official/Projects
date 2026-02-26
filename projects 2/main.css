@@ -1,0 +1,36 @@
+.container{
+    /*these two properties below will help in putting the checked item at bottom of list*/
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0,0,0.15);
+    border-top: 5px solid rgb(96, 182, 96);
+    border-bottom: 5px solid rgb(96, 184, 96);
+}
+
+.todo{
+    /*below two properties ensures that checkboxes appear at right side*/
+    display: flex;
+    justify-content: space-between;
+
+
+    /*to add space between eachb to-do item*/
+    padding: 1em;
+}
+
+.todo__value{
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+ 
+/*to put the checked item at bottom of list*/
+.todo:has(.todo__checkbox:checked){
+    color: #555555;
+    background: white;
+    text-decoration: line-through;
+    order: 1;
+}
