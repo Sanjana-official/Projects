@@ -1,0 +1,67 @@
+* {
+  /*belo two properties to eliminate any kind of base convention */
+  margin: 0;
+  padding: 0;
+}
+
+/*mixin allows me to make any function that i will reuse later*/
+body {
+  font-family: sans-serif;
+  font-size: 4em;
+  color: white;
+}
+body .parallax_wrapper {
+  height: 100vh; /*just so it covers 100% view page*/
+  overflow-x: hidden; /*because we will move in y axis hence scroll so x can stay hidden, no need ,thank you.lol*/
+  overflow-y: auto;
+  perspective: 300px;
+  /*perspective represents z-axis , 
+  y-axis is us scrolling up and down
+  x-axis is us scrolling side ways (i.e left and right),
+  z-axis is us watching our screen,distance between phone and us,
+  like thats z axis and there is internally z-axis we are
+  assuming here which helps in 3d animation typa shit.*/
+}
+body .parallax_wrapper .intro_screen {
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .parallax_wrapper .outro_screen {
+  height: 100vh;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .parallax_wrapper .parallax_group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  /*this property above, preserve the depth which helps in 3d,
+  which might get flattened by some browsers.*/
+}
+body .parallax_wrapper .parallax_group .parallax_layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .parallax_wrapper .parallax_group .base_layer {
+  transform: translateZ(-100px) scale(1);
+}
+body .parallax_wrapper #group-1 > .base_layer {
+  background-color: orange;
+}
+body .parallax_wrapper #group-1 > .mid_layer {
+  background-color: orange;
+}
+body .parallax_wrapper #group-2 > .mid_layer {
+  background-color: blue;
+}
+body .parallax_wrapper #group-2 > .top_layer {
+  background-color: aqua;
+}/*# sourceMappingURL=main.css.map */

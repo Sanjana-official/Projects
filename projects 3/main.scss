@@ -1,0 +1,86 @@
+*{
+    /*belo two properties to eliminate any kind of base convention */
+    margin: 0;
+    padding: 0;
+}
+
+/*mixin allows me to make any function that i will reuse later*/
+@mixin align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 4em;
+    color: white;
+
+    .parallax_wrapper{
+        height: 100vh; /*just so it covers 100% view page*/
+        overflow-x: hidden; /*because we will move in y axis hence scroll so x can stay hidden, no need ,thank you.lol*/
+        overflow-y: auto;
+        perspective: 300px; 
+        /*perspective represents z-axis , 
+        y-axis is us scrolling up and down
+        x-axis is us scrolling side ways (i.e left and right),
+        z-axis is us watching our screen,distance between phone and us,
+        like thats z axis and there is internally z-axis we are
+        assuming here which helps in 3d animation typa shit.*/
+
+        .intro_screen{
+            height: 100vh;
+            background-color: red;
+            @include align-center();
+        }
+
+        .outro_screen{
+            height: 100vh;
+            background-color: teal;
+            @include align-center();
+        }
+
+        .parallax_group{
+            position: relative;
+            height: 100vh;
+            transform-style: preserve-3d ;
+            /*this property above, preserve the depth which helps in 3d,
+            which might get flattened by some browsers.*/
+
+            .parallax_layer{
+                position:absolute;
+                inset: 0;
+                @include align-center();
+            }
+
+            .base_layer{
+                // scale calculation : 1+ (Z transform value * -1 ) /  perspective)
+                    transform: translateZ(-100px) scale(1);
+                }
+        }
+
+        #intro {}
+
+        #group-1 {
+        }
+
+        #group-1> .base_layer {
+            background-color: orange;
+        }
+
+        #group-1> .mid_layer {
+            background-color: orange;
+        }
+
+        #group-2 {}
+
+        #group-2> .mid_layer {
+            background-color: blue;
+        }
+
+        #group-2> .top_layer{
+            background-color: aqua;
+        }
+        #outro {}
+    }
+}
