@@ -3,3 +3,21 @@ DATE - 27/2/2026
 well well, i tried making parallax effect website. kinda tricky,
 i will upload what i ahve currently made, athough its slightly off in size compared to video 
 i am watching.
+
+update - 28/2/2026
+
+YAYYYYYY!!!!
+finally made it with parallax effect, though not from video i was watching yesturday, because it was not working properly and i didnt
+understand everything he was telling or how to change it or how to fix the issue i was having.
+watched another video, he explained well and i made it right but one issue i am still facing is,
+the text is going underneath the image, it should come above it, i dont know how to fix it
+i think the preserve 3d property or maybe the z-index:-1 might not  be working but i dont know how to fix it,
+BUT BUT BUT when i check it in inspecct with different width of different devices, it is working well.
+so i restarted my device, it still is showing same issue.
+my code is literally same as his, i even checked the github repo.
+
+
+https://github.com/WebDevSimplified/css-parallax
+this is his github file.
+check this out future me or anyone. correct my issue.
+thank you.
