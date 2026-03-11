@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at 30% 30%, #3a7bd5 0%, transparent 70%),
+    radial-gradient(circle at 70% 70%, #ff512f 0%, transparent 70%),
+    #0f172a;
+
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+/* PUZZLE CONTAINER */
+
+.puzzle{
+    width:400px;
+    height:300px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+
+    cursor:pointer;
+
+    /* BACKGROUND IMAGE (revealed image) */
+    background-image:url("https://static.vecteezy.com/system/resources/thumbnails/065/636/472/small/radiant-pink-lotus-blossoms-bathed-in-golden-sunlight-free-photo.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+
+/* PUZZLE PIECES */
+
+.piece{
+    background-image:url("https://t4.ftcdn.net/jpg/08/66/72/87/360_F_866728774_pkC6raS4KitjGNrARAY1pezjUUWsOWMk.jpg");
+    background-size:400px 300px;
+    transition:transform 0.8s ease;
+}
+
+/* IMAGE TILE POSITIONS */
+
+.p1{ background-position:0 0; }
+.p2{ background-position:-200px 0; }
+.p3{ background-position:0 -150px; }
+.p4{ background-position:-200px -150px; }
+
+/* SLIDE APART */
+
+.puzzle:hover .p1{
+    transform:translate(-80px,-80px);
+}
+
+.puzzle:hover .p2{
+    transform:translate(80px,-80px);
+}
+
+.puzzle:hover .p3{
+    transform:translate(-80px,80px);
+}
+
+.puzzle:hover .p4{
+    transform:translate(80px,80px);
+}
