@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#773ce3,#e83e99,#8a0707d1);
+    font-family:sans-serif;
+}
+
+/* SCENE gives perspective */
+
+.scene{
+    width:200px;
+    height:200px;
+    perspective:800px;
+}
+
+/* CUBE */
+
+.cube{
+    width:200px;
+    height:200px;
+    position:relative;
+
+    transform-style:preserve-3d;
+
+    animation:rotateCube 6s infinite linear;
+}
+
+/* FACES */
+
+.face{
+    position:absolute;
+    width:200px;
+    height:200px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+    color:#1f2933;
+    font-weight:bold;
+
+    background:linear-gradient(135deg,#3a7bd5,#00d2ff);
+    border:2px solid rgba(255,255,255,0.3);
+}
+
+/* PASTEL GREEN COLORS */
+
+.front{
+    background:#07aadb;   /* mint pastel */
+}
+
+.back{
+    background:#1A2CA3;   /* light jade */
+}
+
+.right{
+    background:#2845D6;   /* pale mint */
+}
+
+.left{
+    background:#F68048;   /* soft green */
+}
+
+.top{
+    background:#ACBFA4;   /* very soft green */
+}
+
+.bottom{
+    background:#E2E8CE;   /* deeper pastel green */
+}
+
+/* POSITION EACH FACE */
+
+.front  { transform:translateZ(100px); }
+.back   { transform:rotateY(180deg) translateZ(100px); }
+
+.right  { transform:rotateY(90deg) translateZ(100px); }
+.left   { transform:rotateY(-90deg) translateZ(100px); }
+
+.top    { transform:rotateX(90deg) translateZ(100px); }
+.bottom { transform:rotateX(-90deg) translateZ(100px); }
+
+/* ROTATION ANIMATION */
+
+@keyframes rotateCube{
+
+    0%{
+        transform:rotateX(0deg) rotateY(0deg);
+    }
+
+    100%{
+        transform:rotateX(360deg) rotateY(360deg);
+    }
+
+}
