@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    font-family:sans-serif;
+}
+
+/* PAGE */
+
+.page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:#ffffff;
+    color:#222;
+
+    transition:0.4s;
+}
+
+
+/* HIDE CHECKBOX */
+
+#toggle{
+    display:none;
+}
+
+
+/* SWITCH */
+
+.switch{
+    position:fixed;
+    top:20px;
+    right:20px;
+
+    width:70px;
+    height:35px;
+
+    background:#ddd;
+    border-radius:30px;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:5px;
+}
+
+
+/* ICONS */
+
+.icon{
+    font-size:18px;
+}
+
+
+/* DARK MODE */
+
+#toggle:checked ~ .page{
+    background:#121212;
+    color:#f0f0f0;
+}
+
+
+/* DARK SWITCH COLOR */
+
+#toggle:checked + .switch{
+    background:#333;
+}
