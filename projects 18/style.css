@@ -1,0 +1,65 @@
+body{
+margin:0;
+background:white;
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+/* YEAR GRID */
+
+.year{
+display:grid;
+grid-template-columns:repeat(12,1fr);
+background-color: blue;
+width:95%;
+gap:10px;
+}
+
+
+/* MONTH GRID */
+
+.month{
+
+display:grid;
+grid-template-columns:repeat(5,1fr); /* weeks */
+grid-template-rows:repeat(7,1fr);    /* days */
+grid-auto-flow: column; 
+gap:3px;
+grid-auto-rows:0;
+
+overflow:hidden;
+
+}
+
+
+/* DAY CELL */
+
+.month span{
+
+width:100%;
+aspect-ratio:0.7;
+
+/* background:#161b22; */
+background-color: pink;
+
+border-radius:2px;
+
+transition:0.2s;
+
+}
+
+
+/* HOVER EFFECT */
+
+.month span:hover{
+
+background:#39d353;
+
+transform:scale(1.15);
+
+}
+
