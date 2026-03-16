@@ -1,0 +1,72 @@
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#0f172a;
+font-family:sans-serif;
+}
+
+
+/* CARD CONTAINER */
+
+.cards{
+display:flex;
+gap:30px;
+}
+
+
+/* CARD STYLE */
+
+.card{
+width:200px;
+height:260px;
+
+background:#9531b1;
+color:white;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:15px;
+
+font-size:20px;
+font-weight:bold;
+
+animation:float 3s ease-in-out infinite;
+transition:0.3s;
+}
+
+
+/* FLOATING ANIMATION */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+
+/* FREEZE ANIMATION ON HOVER */
+
+.card:hover{
+
+animation-play-state:paused;
+
+transform:scale(1.05);
+
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+
+}
