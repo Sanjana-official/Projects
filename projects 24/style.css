@@ -1,0 +1,93 @@
+body{
+margin:0;
+font-family:sans-serif;
+background:#0f172a;
+color:white;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:100px 20px;
+min-height:100vh;
+}
+
+.long{
+line-height:1.8;
+max-width:800px;
+margin:auto;
+}
+
+
+/* REVEAL ELEMENTS */
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:all 0.8s ease;
+}
+
+/* ACTIVE STATE */
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+
+/* OPTIONAL: spacing */
+
+.reveal-section{
+text-align:center;
+}
+
+.reveal-section p{
+margin:20px 0;
+}
+
+#THIS-CARD{
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+    height: max-content;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#THIS-CARD::after, #THIS-CARD::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(from var(--angle), rgb(169, 22, 22),rgb(219, 219, 14),rgb(13, 156, 13),rgb(10, 10, 212),rgb(186, 61, 177),rgb(232, 3, 3));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index:-1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite ;
+}
+
+#THIS-CARD::before{
+    filter: blur(1rem);
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
