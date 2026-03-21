@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+h1{
+    justify-self: center;
+    align-self: center;
+}
+
+p{
+    justify-self: center;
+    align-self: center;
+}
