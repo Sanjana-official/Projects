@@ -1,0 +1,83 @@
+body{
+margin:0;
+scroll-behavior:smooth;
+font-family:sans-serif;
+}
+
+
+/* SECTIONS */
+
+section{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+color:white;
+}
+
+#s1{background:#0f172a;}
+#s2{background:#0f172a;}
+#s3{background:#0f172a;}
+#s4{background:#0f172a;}
+
+
+/* DOT NAV */
+
+.dots{
+position:fixed;
+top:50%;
+right:20px;
+transform:translateY(-50%);
+
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+
+/* DOT */
+
+.dot{
+width:12px;
+height:12px;
+border-radius:50%;
+background:#64748b;
+transition:0.3s;
+}
+
+
+/* ACTIVE */
+
+.dot.active{
+background:#38bdf8;
+transform:scale(1.4);
+box-shadow:0 0 10px #38bdf8;
+}
+
+/* to add line
+.dots::before{
+content:"";
+position:absolute;
+left:50%;
+top:0;
+width:2px;
+height:100%;
+background:#334155;
+transform:translateX(-50%);
+z-index:-1;
+} */
+
+.dot:hover::after{
+content:"Section";
+position:absolute;
+right:20px;
+color:white;
+font-size:12px;
+}
+
+/* Hide scrollbar - Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+    display: none;
+}
+
