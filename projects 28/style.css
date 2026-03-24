@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+/* LEFT SIDE */
+.sidebar {
+  width: 40%; /* increased space */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding-left: 60px;
+}
+
+/* NORMAL NUMBERS */
+.num {
+  font-size: 40px;
+  opacity: 0.3;
+  transform: scale(1);
+  transform-origin: left center;
+  transition: all 0.5s ease;
+}
+
+/* ACTIVE NUMBER */
+.num.active {
+  transform: scale(6);
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* RIGHT SIDE */
+.sections {
+  margin-left: 40%;
+  width: 60%;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  border-bottom: 1px solid #ddd;
+}
