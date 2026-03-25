@@ -1,0 +1,65 @@
+body{
+margin:0;
+font-family:sans-serif;
+background: linear-gradient(blue,pink);
+color:white;
+}
+
+
+/* SCROLL SPACE */
+
+.spacer{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+}
+
+
+/* CONTAINER */
+
+.container{
+height:100vh;
+display:flex;
+justify-content:space-around;
+align-items:center;
+overflow:hidden;
+}
+
+
+/* BOXES */
+
+.box{
+width:40%;
+height:60%;
+background: linear-gradient(rgb(214, 161, 28),rgb(163, 21, 45));
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:10px;
+
+color: black;
+font-size:100PX;
+opacity:0;
+transition:all 0.8s ease;
+}
+
+
+/* START POSITIONS */
+
+.left{
+transform:translateX(-100px);
+}
+
+.right{
+transform:translateX(100px);
+}
+
+
+/* ACTIVE STATE */
+
+.box.show{
+opacity:1;
+transform:translateX(0);
+}
