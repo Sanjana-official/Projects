@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  height: 100vh; /* just for scroll demo */
+  background: linear-gradient(rgba(153, 203, 246, 0.826),pink);
+  font-family: monospace;
+  color: white;
+}
+
+/* TIMER BOX */
+#timerBox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 16px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+/* LABEL */
+/* #timerBox span {
+  font-size: 12px;
+  opacity: 0.6;
+} */
+
+/* TIME */
+#timer {
+  margin: 0;
+  font-size: 28px;
+}
+
+#timerBox {
+  transition: transform 0.3s ease;
+}
+
+#timerBox:hover {
+  transform: scale(1.05);
+}
+
+#timer {
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+#HEADING{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+}
