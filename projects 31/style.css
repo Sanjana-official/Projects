@@ -1,0 +1,84 @@
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#0f172a;
+font-family:sans-serif;
+color:white;
+}
+
+
+/* CLOCK CONTAINER */
+
+.clock{
+position:fixed;   /* stays in place even when scrolling */
+top:20px;
+right:20px;
+
+display:flex;
+gap:15px;
+z-index:1000;
+}
+
+/* CIRCLE */
+
+.circle{
+width:120px;
+height:120px;
+border-radius:50%;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+background:#1e293b;
+
+box-shadow:
+0 0 20px rgba(56,189,248,0.2),
+inset 0 0 10px rgba(255,255,255,0.05);
+
+transition:0.3s;
+}
+
+
+/* NUMBER */
+
+.circle span{
+font-size:28px;
+font-weight:bold;
+}
+
+
+/* LABEL */
+
+.circle p{
+margin:5px 0 0;
+font-size:12px;
+opacity:0.7;
+}
+
+
+/* HOVER EFFECT */
+
+.circle:hover{
+transform:scale(1.05);
+box-shadow:
+0 0 30px rgba(56,189,248,0.4),
+inset 0 0 15px rgba(255,255,255,0.1);
+}
+
+.circle{
+width:80px;
+height:80px;
+}
+
+.circle span{
+font-size:20px;
+}
+
+.circle p{
+font-size:10px;
+}
