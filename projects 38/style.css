@@ -1,0 +1,48 @@
+body{
+margin:0;
+background:#0f172a;
+color:white;
+font-family:sans-serif;
+}
+
+
+/* MARQUEE CONTAINER */
+
+.marquee{
+overflow:hidden;
+white-space:nowrap;
+width:100%;
+background:linear-gradient(PINK,VIOLET);
+border-top:2px solid #38bdf8;
+border-bottom:2px solid #38bdf8;
+}
+
+
+/* TRACK */
+
+.track{
+display:inline-block;
+white-space:nowrap;
+animation:scroll 10s linear infinite;
+}
+
+
+/* TEXT */
+
+.track span{
+font-size:40px;
+padding-right:50px;
+display:inline-block;
+}
+
+
+/* ANIMATION */
+
+@keyframes scroll{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
