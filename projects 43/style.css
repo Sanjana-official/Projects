@@ -1,0 +1,95 @@
+/* ROOT VARIABLES */
+
+:root{
+--bg:#ede8e8;
+--text:#0f172a;
+--card:#f1f5f9;
+}
+
+/* DARK MODE */
+
+body.dark{
+--bg:#0f172a;
+--text:#ffffff;
+--card:#1e293b;
+}
+
+
+/* BASE */
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-family:sans-serif;
+
+background:var(--bg);
+color:var(--text);
+
+/* smooth transition */
+transition:0.4s ease;
+}
+
+
+/* CONTENT */
+
+.content{
+text-align:center;
+background:var(--card);
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* TOGGLE SWITCH */
+
+.toggle{
+position:absolute;
+top:20px;
+right:20px;
+}
+
+.toggle input{
+display:none;
+}
+
+.toggle label{
+width:60px;
+height:30px;
+background:#ccc;
+display:block;
+border-radius:30px;
+position:relative;
+cursor:pointer;
+transition:0.3s;
+}
+
+
+/* SWITCH KNOB */
+
+.toggle label::before{
+content:"";
+position:absolute;
+width:25px;
+height:25px;
+background:white;
+border-radius:50%;
+top:2.5px;
+left:3px;
+transition:0.3s;
+}
+
+
+/* ACTIVE STATE */
+
+.toggle input:checked + label{
+background:#38bdf8;
+}
+
+.toggle input:checked + label::before{
+transform:translateX(30px);
+}
