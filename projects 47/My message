@@ -1,3 +1,8 @@
 DATE - 12/4/2026
 
-PROJECT - 
+PROJECT - LOGO SCROLL TRIGGERED ANIMATION
+
+i visited vizon website as i got message about internship from them in internshala.
+i noticed this effect of their logo at center of page
+and it going up at top (align-item:start, justif-content:center) position.
+based on that i created this project.
