@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #fff;
+    padding: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background: #111827;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  }
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #000;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #22c55e;
+    font-weight: bold;
+  }
+
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+
+<body>
+<h1>My Projects</h1>
+
+<div class="grid" id="grid"></div>
+
+<script>
+// 🔥 Add your folder names here (ONLY this part you edit)
+const projects = [
+  "projects 1","projects 2","projects 3","projects 4","projects 5","projects 6","projects 7","projects 8","projects 9","projects 10",
+  "projects 11","projects 12","projects 13","projects 14","projects 15","projects 16","projects 17","projects 18","projects 19","projects 20",
+  "projects 21","projects 22","projects 23","projects 24","projects 25","projects 26","projects 27","projects 28","projects 29","projects 30",
+  "projects 31","projects 32","projects 33","projects 34","projects 35","projects 36","projects 37","projects 38","projects 39","projects 40",
+  "projects 41","projects 42","projects 43","projects 44","projects 45","projects 46",
+  // add all 46 folders here
+];
+
+const grid = document.getElementById("grid");
+
+projects.forEach(name => {
+  const url = `./${name}/`;
+
+  // Using thum.io to auto-generate preview image
+  const preview = `https://image.thum.io/get/width/800/${location.origin}${location.pathname}${name}/`;
+
+  const card = document.createElement("div");
+  card.className = "card";
+
+  card.innerHTML = `
+    <img src="${preview}" alt="${name} preview">
+    <div class="content">
+      <div class="title">${name}</div>
+      <a href="${url}" target="_blank">Open Project →</a>
+    </div>
+  `;
+
+  grid.appendChild(card);
+});
+</script>
+
+</body>
+</html>
