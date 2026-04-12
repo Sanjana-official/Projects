@@ -1,0 +1,99 @@
+body{
+margin:0;
+font-family:sans-serif;
+background:repeating-linear-gradient(pink,rgb(242, 199, 119));
+color:white;
+height:200vh;
+}
+
+.header{
+position:sticky;
+top:0;
+height:70px;
+/* background:#0f172a; */
+z-index:100;
+display:flex;
+align-items:center;
+padding-left:20px;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+transition: height 1s ease;
+}
+.hero.collapse {
+  height: 2px; /* same as final header space */
+}
+
+/* LOGO */
+
+.logo-container{
+position:fixed;
+top:50%;
+left:55%;
+transform:translate(-50%, -50%) scale(2);
+display:flex;
+gap:5px;
+align-items:baseline;
+}
+
+
+
+/* LETTER */
+
+.logo{
+font-size:60px;
+font-weight:bold;
+color:#38bdf8;
+line-height:1;
+}
+
+
+/* TEXT (hidden initially) */
+
+.text span{
+opacity:0;
+transform:translateX(20px);
+transition:0.5s ease;
+font-size:60px;   /* same size */
+font-weight:bold;
+line-height:1;
+}
+
+
+
+/* 🎯 FINAL POSITION */
+
+.logo-container.final{
+top:20px;
+left:20px;
+transform:translate(0,0) scale(1);
+
+transition:
+top 1.2s ease,
+left 1.2s ease,
+transform 1.2s ease;
+}
+
+
+/* TEXT APPEARS AFTER */
+
+.logo-container.show-text .text span{
+opacity:1;
+transform:translateX(0);
+font-size: larger;
+font-size:60px;   /* same size */
+font-weight:bold;
+line-height:1;
+
+}
+
+
+.content{
+padding:35px 20px;
+}
