@@ -11,6 +11,10 @@ position:sticky;
 top:0;
 height:70px;
 /* background:#0f172a; */
+background: rgba(255, 255, 255, 0); /* translucent */
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+width: 100%;
 z-index:100;
 display:flex;
 align-items:center;
