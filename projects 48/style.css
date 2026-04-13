@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgb(225, 158, 225),indigo);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0); /* translucent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 30px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+
+  z-index: 1000;
+}
+
+/* Hidden state */
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+/* Nav items */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+/* Sections for scrolling */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
