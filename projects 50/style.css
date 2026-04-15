@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* container */
+.split-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* panels */
+.panel {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  transition: flex 0.6s ease;
+  cursor: pointer;
+}
+
+/* backgrounds */
+.left {
+  background: url("https://picsum.photos/1000/800?1") center/cover;
+}
+
+.right {
+  background: url("https://picsum.photos/1000/800?2") center/cover;
+}
+
+/* overlay for readability */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+/* content */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 300px;
+}
+
+.content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* hover expand effect */
+.split-container.hover-left .left {
+  flex: 2;
+}
+
+.split-container.hover-left .right {
+  flex: 1;
+}
+
+.split-container.hover-right .right {
+  flex: 2;
+}
+
+.split-container.hover-right .left {
+  flex: 1;
+}
+
+/* mobile */
+@media(max-width: 768px){
+  .split-container {
+    flex-direction: column;
+  }
+
+  .panel {
+    height: 50vh;
+  }
+}
