@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* palette container */
+.palette {
+  display: flex;
+  height: 70vh;
+}
+
+/* each color block */
+.color-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.color-box:hover {
+  transform: scale(1.05);
+}
+
+/* hex text */
+.color-code {
+  background: rgba(0,0,0,0.5);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
