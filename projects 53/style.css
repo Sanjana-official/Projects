@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  width: 350px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.balance {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.income {
+  color: #22c55e;
+}
+
+.expense {
+  color: #ef4444;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.list li {
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 5px solid;
+  border-radius: 5px;
+}
+
+.list li.plus {
+  border-color: #22c55e;
+}
+
+.list li.minus {
+  border-color: #ef4444;
+}
+
+/* delete button */
+.delete-btn {
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+}
