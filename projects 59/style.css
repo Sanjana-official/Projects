@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* navbar */
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* bell */
+.bell {
+  position: relative;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* badge */
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* dropdown */
+.dropdown {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  width: 220px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+
+.dropdown.show {
+  display: block;
+}
