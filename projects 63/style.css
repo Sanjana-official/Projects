@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+input {
+  width: 250px;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#type {
+  margin-top: 10px;
+  color: #38bdf8;
+}
