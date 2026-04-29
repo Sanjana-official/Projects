@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>(64)Box Shadow Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Box Shadow Generator</h2>
+
+  <div class="controls">
+    <label>X Offset <input type="range" id="x" min="-50" max="50" value="10"></label>
+    <label>Y Offset <input type="range" id="y" min="-50" max="50" value="10"></label>
+    <label>Blur <input type="range" id="blur" min="0" max="100" value="20"></label>
+    <label>Spread <input type="range" id="spread" min="0" max="50" value="0"></label>
+    <label>Color <input type="color" id="color" value="#000000"></label>
+  </div>
+
+  <div class="preview" id="box"></div>
+
+  <textarea id="output" readonly></textarea>
+  <button id="copy">Copy CSS</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
