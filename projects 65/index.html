@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>(65)Border Radius Previewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Border Radius Generator</h2>
+
+  <div class="controls">
+    <label>Top Left <input type="range" id="tl" min="0" max="100" value="20"></label>
+    <label>Top Right <input type="range" id="tr" min="0" max="100" value="20"></label>
+    <label>Bottom Right <input type="range" id="br" min="0" max="100" value="20"></label>
+    <label>Bottom Left <input type="range" id="bl" min="0" max="100" value="20"></label>
+  </div>
+
+  <div class="preview" id="box"></div>
+
+  <textarea id="output" readonly></textarea>
+  <button id="copy">Copy CSS</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
