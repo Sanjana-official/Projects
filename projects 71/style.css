@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* list */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
