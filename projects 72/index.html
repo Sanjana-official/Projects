@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(72)FITZONE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">FITZONE</h2>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Programs</a></li>
+    <li><a href="#">Trainers</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <button class="join-btn">Join Now</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>BUILD YOUR <span>DREAM BODY</span></h1>
+
+    <p>
+      Push your limits. Transform your physique.
+      Join the strongest fitness community today.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="primary">Start Today</button>
+      <button class="secondary">Watch Video</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+
+  <div class="card">
+    <h3>🏋️ Strength</h3>
+    <p>Modern equipment and expert trainers.</p>
+  </div>
+
+  <div class="card">
+    <h3>🔥 Fat Burn</h3>
+    <p>Intense workout plans for fast results.</p>
+  </div>
+
+  <div class="card">
+    <h3>🥗 Nutrition</h3>
+    <p>Personalized diet guidance and tracking.</p>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
