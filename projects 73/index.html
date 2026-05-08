@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(73)Real Estate UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">ESTATE.</h2>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Properties</a></li>
+    <li><a href="#">Agents</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <button class="nav-btn">Get Started</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Find Your <span>Dream Home</span></h1>
+
+    <p>
+      Discover modern apartments, luxury villas,
+      and premium homes in top locations.
+    </p>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+      <input type="text" placeholder="Search location...">
+
+      <select>
+        <option>Property Type</option>
+        <option>Apartment</option>
+        <option>Villa</option>
+        <option>Office</option>
+      </select>
+
+      <button>Search</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- LISTINGS -->
+<section class="listings">
+
+  <!-- CARD -->
+  <div class="card">
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+
+      <span class="tag">For Sale</span>
+    </div>
+
+    <div class="card-content">
+      <h3>Luxury Modern Villa</h3>
+
+      <p class="location">📍 Mumbai, India</p>
+
+      <div class="details">
+        <span>🛏 4 Beds</span>
+        <span>🛁 3 Baths</span>
+        <span>📐 3200 sqft</span>
+      </div>
+
+      <div class="bottom">
+        <h2>₹2.5 Cr</h2>
+        <button>View</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+
+      <span class="tag rent">For Rent</span>
+    </div>
+
+    <div class="card-content">
+      <h3>Minimal Apartment</h3>
+
+      <p class="location">📍 Bangalore, India</p>
+
+      <div class="details">
+        <span>🛏 2 Beds</span>
+        <span>🛁 2 Baths</span>
+        <span>📐 1400 sqft</span>
+      </div>
+
+      <div class="bottom">
+        <h2>₹45k/mo</h2>
+        <button>View</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="card">
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop">
+
+      <span class="tag">For Sale</span>
+    </div>
+
+    <div class="card-content">
+      <h3>Premium Family House</h3>
+
+      <p class="location">📍 Delhi, India</p>
+
+      <div class="details">
+        <span>🛏 5 Beds</span>
+        <span>🛁 4 Baths</span>
+        <span>📐 4100 sqft</span>
+      </div>
+
+      <div class="bottom">
+        <h2>₹3.8 Cr</h2>
+        <button>View</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
