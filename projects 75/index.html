@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(75)Social Feed UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Connect.</h2>
+
+  <div class="search">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <div class="profile">
+    <img src="https://i.pravatar.cc/100?img=12">
+  </div>
+</nav>
+
+<!-- FEED -->
+<div class="feed-container">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="menu-item active">🏠 Home</div>
+    <div class="menu-item">🔥 Trending</div>
+    <div class="menu-item">💬 Messages</div>
+    <div class="menu-item">👥 Friends</div>
+    <div class="menu-item">⚙️ Settings</div>
+
+  </aside>
+
+  <!-- MAIN FEED -->
+  <main class="feed">
+
+    <!-- CREATE POST -->
+    <div class="create-post">
+      <img src="https://i.pravatar.cc/100?img=12">
+
+      <input type="text" placeholder="What's happening?">
+
+      <button>Post</button>
+    </div>
+
+    <!-- POST -->
+    <div class="post">
+
+      <div class="post-top">
+        <img src="https://i.pravatar.cc/100?img=20">
+
+        <div>
+          <h4>Alex Morgan</h4>
+          <span>2 hours ago</span>
+        </div>
+      </div>
+
+      <p class="caption">
+        Just finished building a new UI concept 🚀
+      </p>
+
+      <img
+        class="post-img"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+      >
+
+      <div class="actions">
+        <button class="like-btn">❤️ <span>120</span></button>
+        <button>💬 24</button>
+        <button>🔄 Share</button>
+      </div>
+
+    </div>
+
+    <!-- POST -->
+    <div class="post">
+
+      <div class="post-top">
+        <img src="https://i.pravatar.cc/100?img=31">
+
+        <div>
+          <h4>Sophia Lee</h4>
+          <span>5 hours ago</span>
+        </div>
+      </div>
+
+      <p class="caption">
+        Morning workout completed 💪
+      </p>
+
+      <img
+        class="post-img"
+        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop"
+      >
+
+      <div class="actions">
+        <button class="like-btn">❤️ <span>89</span></button>
+        <button>💬 11</button>
+        <button>🔄 Share</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="rightbar">
+
+    <h3>Trending</h3>
+
+    <div class="trend">
+      <span>#WebDevelopment</span>
+    </div>
+
+    <div class="trend">
+      <span>#UIUX</span>
+    </div>
+
+    <div class="trend">
+      <span>#Fitness</span>
+    </div>
+
+    <div class="trend">
+      <span>#AI</span>
+    </div>
+
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
