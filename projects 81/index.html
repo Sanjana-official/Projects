@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(81)URL Shortener UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card">
+
+    <h1>🔗 URL Shortener</h1>
+
+    <p>
+      Paste your long URL below and generate
+      a shortened version instantly.
+    </p>
+
+    <!-- INPUT -->
+    <div class="input-group">
+
+      <input
+        type="text"
+        id="urlInput"
+        placeholder="Enter long URL..."
+      >
+
+      <button id="shortenBtn">
+        Shorten
+      </button>
+
+    </div>
+
+    <!-- RESULT -->
+    <div class="result" id="result">
+
+      <div class="hidden" id="resultBox">
+
+        <p class="long-url" id="longUrl"></p>
+
+        <div class="short-box">
+
+          <a href="#" id="shortUrl" target="_blank">
+            short.ly/abc123
+          </a>
+
+          <button id="copyBtn">
+            Copy
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
