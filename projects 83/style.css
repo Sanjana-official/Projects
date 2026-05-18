@@ -1,0 +1,158 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+
+  background:#0f172a;
+  font-family:Arial,sans-serif;
+
+  color:white;
+  padding:30px;
+}
+
+/* HEADER */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:30px;
+}
+
+header h1{
+  color:#38bdf8;
+}
+
+/* BUTTON */
+
+#addNoteBtn{
+  padding:14px 22px;
+
+  border:none;
+  border-radius:14px;
+
+  background:#38bdf8;
+  color:black;
+
+  cursor:pointer;
+  font-weight:bold;
+  font-size:15px;
+
+  transition:0.3s;
+}
+
+#addNoteBtn:hover{
+  transform:translateY(-2px);
+}
+
+/* NOTES GRID */
+
+.notes-container{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fill,minmax(260px,1fr));
+
+  gap:25px;
+}
+
+/* NOTE */
+
+.note{
+  min-height:250px;
+
+  display:flex;
+  flex-direction:column;
+
+  border-radius:20px;
+  overflow:hidden;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.3);
+
+  animation:fadeIn 0.3s ease;
+}
+
+/* NOTE COLORS */
+
+.note:nth-child(4n+1){
+  background:#fef08a;
+  color:black;
+}
+
+.note:nth-child(4n+2){
+  background:#bfdbfe;
+  color:black;
+}
+
+.note:nth-child(4n+3){
+  background:#fecdd3;
+  color:black;
+}
+
+.note:nth-child(4n+4){
+  background:#bbf7d0;
+  color:black;
+}
+
+/* TOP BAR */
+
+.note-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:12px 15px;
+
+  background:rgba(0,0,0,0.08);
+}
+
+/* DELETE BUTTON */
+
+.delete-btn{
+  border:none;
+  background:none;
+
+  cursor:pointer;
+  font-size:18px;
+}
+
+/* TEXTAREA */
+
+textarea{
+  flex:1;
+
+  border:none;
+  outline:none;
+  resize:none;
+
+  background:transparent;
+
+  padding:18px;
+
+  font-size:16px;
+  font-family:inherit;
+
+  color:inherit;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+  from{
+    opacity:0;
+    transform:scale(0.9);
+  }
+
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+
+}
