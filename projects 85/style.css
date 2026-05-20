@@ -1,0 +1,170 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+
+  background:#0f172a;
+  font-family:Arial,sans-serif;
+  color:white;
+
+  display:flex;
+  justify-content:center;
+
+  padding:40px 20px;
+}
+
+.container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+/* CARD */
+
+.journal-card{
+  width:700px;
+  max-width:100%;
+
+  background:rgba(255,255,255,0.05);
+
+  padding:35px;
+  border-radius:24px;
+
+  backdrop-filter:blur(12px);
+}
+
+.journal-card h1{
+  text-align:center;
+  margin-bottom:30px;
+
+  color:#38bdf8;
+}
+
+/* INPUTS */
+
+input,
+textarea{
+  width:100%;
+
+  border:none;
+  outline:none;
+
+  border-radius:16px;
+
+  padding:16px;
+
+  font-size:16px;
+  font-family:inherit;
+
+  margin-bottom:20px;
+}
+
+textarea{
+  min-height:180px;
+  resize:vertical;
+}
+
+/* BUTTON */
+
+button{
+  width:100%;
+
+  padding:15px;
+
+  border:none;
+  border-radius:16px;
+
+  background:#38bdf8;
+  color:black;
+
+  cursor:pointer;
+  font-size:16px;
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+button:hover{
+  transform:translateY(-2px);
+}
+
+/* ENTRIES */
+
+.entries{
+  margin-top:40px;
+}
+
+.entries h2{
+  margin-bottom:20px;
+}
+
+/* ENTRY CARD */
+
+.entry{
+  background:rgba(255,255,255,0.05);
+
+  padding:20px;
+  border-radius:18px;
+
+  margin-bottom:18px;
+
+  animation:fadeIn 0.3s ease;
+}
+
+.entry-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:12px;
+}
+
+.entry-title{
+  color:#38bdf8;
+}
+
+.entry-date{
+  color:#94a3b8;
+  font-size:13px;
+}
+
+.entry-text{
+  line-height:1.7;
+  color:#e2e8f0;
+
+  white-space:pre-wrap;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn{
+  margin-top:18px;
+
+  background:#ef4444;
+  color:white;
+
+  width:auto;
+  padding:10px 16px;
+
+  border-radius:12px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}

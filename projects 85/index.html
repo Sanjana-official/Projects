@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(85)Simple Journal App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="journal-card">
+
+    <h1>📔 My Journal</h1>
+
+    <!-- ENTRY TITLE -->
+    <input
+      type="text"
+      id="titleInput"
+      placeholder="Entry title..."
+    >
+
+    <!-- ENTRY TEXT -->
+    <textarea
+      id="journalInput"
+      placeholder="Write your thoughts here..."
+    ></textarea>
+
+    <!-- BUTTON -->
+    <button id="saveBtn">
+      Save Entry
+    </button>
+
+    <!-- ENTRIES -->
+    <div class="entries">
+
+      <h2>Saved Entries</h2>
+
+      <div id="entriesList">
+
+        <!-- JOURNAL ENTRIES HERE -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
