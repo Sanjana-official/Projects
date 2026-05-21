@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(86)Text Highlighter & Font Size Changer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="tool-card">
+
+    <h1>🖍 Text Tool</h1>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+
+      <!-- HIGHLIGHT -->
+      <button id="highlightBtn">
+        Highlight Text
+      </button>
+
+      <!-- REMOVE HIGHLIGHT -->
+      <button id="removeBtn">
+        Remove Highlight
+      </button>
+
+      <!-- FONT SIZE -->
+      <div class="font-control">
+
+        <label>Font Size</label>
+
+        <input
+          type="range"
+          id="fontSize"
+          min="14"
+          max="40"
+          value="18"
+        >
+
+      </div>
+
+    </div>
+
+    <!-- TEXT AREA -->
+    <div
+      class="editable-text"
+      id="editableText"
+      contenteditable="true"
+    >
+      Select any part of this text and click
+      "Highlight Text" to highlight it.
+      You can also adjust the font size using
+      the slider above.
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+
+  background:#0f172a;
+  font-family:Arial,sans-serif;
+  color:white;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+}
+
+.container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+/* CARD */
+
+.tool-card{
+  width:800px;
+  max-width:100%;
+
+  background:rgba(255,255,255,0.05);
+
+  padding:35px;
+  border-radius:24px;
+
+  backdrop-filter:blur(12px);
+}
+
+.tool-card h1{
+  text-align:center;
+  margin-bottom:30px;
+
+  color:#38bdf8;
+}
+
+/* CONTROLS */
+
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+
+  align-items:center;
+
+  margin-bottom:25px;
+}
+
+/* BUTTONS */
+
+button{
+  padding:12px 18px;
+
+  border:none;
+  border-radius:12px;
+
+  background:#38bdf8;
+  color:black;
+
+  cursor:pointer;
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+button:hover{
+  transform:translateY(-2px);
+}
+
+/* FONT CONTROL */
+
+.font-control{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.font-control label{
+  color:#cbd5e1;
+}
+
+/* RANGE */
+
+input[type="range"]{
+  cursor:pointer;
+}
+
+/* EDITABLE AREA */
+
+.editable-text{
+  min-height:260px;
+
+  background:rgba(255,255,255,0.05);
+
+  padding:25px;
+  border-radius:18px;
+
+  outline:none;
+
+  line-height:1.8;
+  font-size:18px;
+
+  color:#e2e8f0;
+}
+
+/* HIGHLIGHT */
+
+mark{
+  background:#b9f18d;
+  color:black;
+
+  padding:2px 4px;
+  border-radius:4px;
+}
