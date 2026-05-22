@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(87)Weekly Timetable Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="timetable-card">
+
+    <h1>📅 Weekly Timetable</h1>
+
+    <!-- INPUTS -->
+    <div class="input-area">
+
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Task / Subject"
+      >
+
+      <select id="daySelect">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+
+      <input
+        type="time"
+        id="timeInput"
+      >
+
+      <button id="addBtn">
+        Add
+      </button>
+
+    </div>
+
+    <!-- TIMETABLE -->
+    <div class="table-wrapper">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Task</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+          <!-- TASKS ADDED HERE -->
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
