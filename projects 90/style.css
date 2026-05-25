@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+
+  background:#0f172a;
+  font-family:Arial,sans-serif;
+  color:white;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+}
+
+.container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+/* CARD */
+
+.keyboard-card{
+  width:900px;
+  max-width:100%;
+
+  background:rgba(255,255,255,0.05);
+
+  padding:35px;
+  border-radius:24px;
+
+  text-align:center;
+
+  backdrop-filter:blur(12px);
+}
+
+.keyboard-card h1{
+  margin-bottom:10px;
+  color:#38bdf8;
+}
+
+.info{
+  color:#cbd5e1;
+  margin-bottom:30px;
+}
+
+/* DISPLAY */
+
+.display{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-bottom:35px;
+}
+
+.key-box{
+  flex:1;
+  min-width:220px;
+
+  background:rgba(255,255,255,0.05);
+
+  padding:25px;
+  border-radius:18px;
+}
+
+.label{
+  display:block;
+  margin-bottom:10px;
+
+  color:#94a3b8;
+}
+
+.key-box h2{
+  font-size:34px;
+  color:#facc15;
+}
+
+/* KEYBOARD */
+
+.keyboard{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.row{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+
+  flex-wrap:wrap;
+}
+
+/* KEY */
+
+.key{
+  width:60px;
+  height:60px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:#1e293b;
+
+  border-radius:14px;
+
+  font-weight:bold;
+
+  transition:0.15s;
+}
+
+/* ACTIVE KEY */
+
+.key.active{
+  transform:scale(1.08);
+
+  background:#38bdf8;
+  color:black;
+
+  box-shadow:
+  0 0 20px rgba(56,189,248,0.7);
+}
+
+/* SPACE */
+
+.space-key{
+  width:350px;
+  max-width:100%;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+  .key{
+    width:48px;
+    height:48px;
+
+    font-size:14px;
+  }
+
+}
