@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:#0f172a;
+  font-family:Arial,sans-serif;
+
+  color:white;
+}
+
+.container{
+  text-align:center;
+  padding:20px;
+}
+
+/* TITLE */
+
+.title{
+  font-size:60px;
+  font-weight:bold;
+
+  line-height:1.4;
+}
+
+/* TYPING TEXT */
+
+#typingText{
+  color:#38bdf8;
+}
+
+/* CURSOR */
+
+.cursor{
+  color:#38bdf8;
+
+  animation:blink 0.8s infinite;
+}
+
+/* CURSOR BLINK */
+
+@keyframes blink{
+
+  0%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:1;
+  }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+  .title{
+    font-size:36px;
+  }
+
+}
